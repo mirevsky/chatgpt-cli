@@ -65,7 +65,7 @@ func AddApiKeyFlag(str *string, flags *pflag.FlagSet) {
 }
 
 func AddBaseUrlFlag(str *string, flags *pflag.FlagSet) {
-	flags.StringVarP(str, FlagBaseUrl, "url", "", "ChatGPT BaseUrl")
+	flags.StringVarP(str, FlagBaseUrl, "u", "", "ChatGPT BaseUrl")
 }
 
 func AddModelFlag(str *string, flags *pflag.FlagSet) {
