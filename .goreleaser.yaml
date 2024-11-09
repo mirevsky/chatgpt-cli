@@ -7,7 +7,7 @@ before:
     # you may remove this if you don't need go generate
     - go generate ./...
 builds:
-  - ldflags: -X "github.com/duanemay/chatgpt-cli/cmd.version={{.Version}}"
+  - ldflags: -X "github.com/mirevsky/chatgpt-cli/cmd.version={{.Version}}"
     env:
       - CGO_ENABLED=0
     goos:
@@ -47,10 +47,10 @@ changelog:
 
 brews:
   - repository:
-      owner: duanemay
+      owner: mirevsky
       name: homebrew-tap
     directory: Formula
-    homepage: https://github.com/duanemay/homebrew-tap
+    homepage: https://github.com/mirevsky/homebrew-tap
     description: Recursively expand archives containing other archives
 
 env_files:
