@@ -23,7 +23,7 @@ func NewListModelsCmd(rootFlags *RootFlags) *cobra.Command {
 func listModelsCmdRunner(rootFlags *RootFlags) func(cmd *cobra.Command, args []string) error {
 	return func(_ *cobra.Command, _ []string) error {
 		log.Debugf("listModelsCmd called")
-		client, err := setupOpenAIClient(rootFlags.apikey)
+		client, err := setupOpenAIClient(rootFlags.apikey, rootFlags.baseUrl)
 		if err != nil {
 			log.WithError(err).Error()
 			return err

@@ -6,7 +6,7 @@ import (
 	"context"
 	"encoding/base64"
 	"fmt"
-	os2 "github.com/duanemay/chatgpt-cli/pkg/os"
+	os2 "github.com/mirevsky/chatgpt-cli/pkg/os"
 	"github.com/sashabaranov/go-openai"
 	"golang.org/x/image/webp"
 	"image"
@@ -57,7 +57,7 @@ func imageCmdRunner(rootFlags *RootFlags, imageFlags *ImageFlags, chatContext *C
 		if chatContext.InteractiveSession {
 			printImageBanner(imageFlags)
 		}
-		client, err := setupOpenAIClient(rootFlags.apikey)
+		client, err := setupOpenAIClient(rootFlags.apikey, rootFlags.baseUrl)
 		if err != nil {
 			log.WithError(err).Fatal()
 		}

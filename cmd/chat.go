@@ -44,7 +44,7 @@ func chatCmdRun(rootFlags *RootFlags, chatFlags *ChatFlags, chatContext *ChatCon
 		if chatContext.InteractiveSession {
 			printBanner(chatFlags)
 		}
-		client, err := setupOpenAIClient(rootFlags.apikey)
+		client, err := setupOpenAIClient(rootFlags.apikey, rootFlags.baseUrl)
 		if err != nil {
 			log.WithError(err).Fatal()
 		}

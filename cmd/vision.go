@@ -50,7 +50,7 @@ func visionCmdRunner(rootFlags *RootFlags, visionFlags *VisionFlags, chatContext
 		if chatContext.InteractiveSession {
 			printVisionBanner(visionFlags)
 		}
-		client, err := setupOpenAIClient(rootFlags.apikey)
+		client, err := setupOpenAIClient(rootFlags.apikey, rootFlags.baseUrl)
 		if err != nil {
 			log.WithError(err).Fatal()
 		}

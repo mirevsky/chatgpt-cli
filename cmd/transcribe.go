@@ -43,7 +43,7 @@ func transcribeCmdRunner(rootFlags *RootFlags, transcriptionFlags *Transcription
 		if chatContext.InteractiveSession {
 			printTranscriptionBanner(transcriptionFlags)
 		}
-		client, err := setupOpenAIClient(rootFlags.apikey)
+		client, err := setupOpenAIClient(rootFlags.apikey, rootFlags.baseUrl)
 		if err != nil {
 			log.WithError(err).Fatal()
 		}

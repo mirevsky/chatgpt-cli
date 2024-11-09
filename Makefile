@@ -1,5 +1,5 @@
 EXECUTABLE_NAME := chatgpt-cli
-MODULE := github.com/duanemay/chatgpt-cli
+MODULE := github.com/mirevsky/chatgpt-cli
 
 ifeq ($(GOHOSTOS),)
 	GOHOSTOS:=$(shell uname | tr A-Z a-z | sed 's/mingw/windows/; s/.*windows.*/windows/')

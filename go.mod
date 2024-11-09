@@ -1,4 +1,4 @@
-module github.com/duanemay/chatgpt-cli
+module github.com/mirevsky/chatgpt-cli
 
 go 1.23.0
 

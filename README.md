@@ -81,7 +81,7 @@ The image depicts a whimsical circus scene with a monkey in a banana suit balanc
 Which gives us the resulting audio file.
 
 
-https://github.com/duanemay/chatgpt-cli/assets/991170/bb629736-3dc1-4ee1-99f8-1a93646c60da
+https://github.com/mirevsky/chatgpt-cli/assets/991170/bb629736-3dc1-4ee1-99f8-1a93646c60da
 
 And similarly, you can do this non-Interactively
 

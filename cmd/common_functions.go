@@ -22,11 +22,12 @@ func setChatContext(cmd *cobra.Command, chatContext *ChatContext) {
 }
 
 // setupOpenAIClient verifies the token exists, and creates a new OpenAI client
-func setupOpenAIClient(apikey string) (*openai.Client, error) {
+func setupOpenAIClient(apikey string, baseUrl string) (*openai.Client, error) {
 	if apikey == "" {
 		return nil, errors.Errorf("OpenAI API Key not set")
 	}
-	client := openai.NewClient(apikey)
+	config := openai.DefaultAzureConfig(apikey, baseUrl)
+	client := openai.NewClientWithConfig(config)
 	return client, nil
 }
 

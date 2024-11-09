@@ -1,7 +1,7 @@
 package cmd_test
 
 import (
-	"github.com/duanemay/chatgpt-cli/cmd"
+	"github.com/mirevsky/chatgpt-cli/cmd"
 	log "github.com/sirupsen/logrus"
 	"github.com/spf13/cobra"
 	"os"

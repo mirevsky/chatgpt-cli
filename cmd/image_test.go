@@ -1,7 +1,7 @@
 package cmd_test
 
 import (
-	"github.com/duanemay/chatgpt-cli/cmd"
+	"github.com/mirevsky/chatgpt-cli/cmd"
 	"github.com/spf13/cobra"
 
 	. "github.com/onsi/ginkgo/v2"

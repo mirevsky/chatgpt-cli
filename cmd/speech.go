@@ -4,7 +4,7 @@ import (
 	"bufio"
 	"context"
 	"fmt"
-	os2 "github.com/duanemay/chatgpt-cli/pkg/os"
+	os2 "github.com/mirevsky/chatgpt-cli/pkg/os"
 	"github.com/pterm/pterm"
 	"github.com/sashabaranov/go-openai"
 	log "github.com/sirupsen/logrus"
@@ -48,7 +48,7 @@ func speechCmdRunner(rootFlags *RootFlags, speechFlags *SpeechFlags, chatContext
 		if chatContext.InteractiveSession {
 			printSpeechBanner(speechFlags)
 		}
-		client, err := setupOpenAIClient(rootFlags.apikey)
+		client, err := setupOpenAIClient(rootFlags.apikey, rootFlags.baseUrl)
 		if err != nil {
 			log.WithError(err).Fatal()
 		}

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/duanemay/chatgpt-cli/cmd"
+	"github.com/mirevsky/chatgpt-cli/cmd"
 	"os"
 )
 
