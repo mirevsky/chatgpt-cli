@@ -36,6 +36,7 @@ func NewRootCmd() *cobra.Command {
 
 	AddConfigFileFlag(&rootFlags.configFile, cmds.PersistentFlags())
 	AddApiKeyFlag(&rootFlags.apikey, cmds.PersistentFlags())
+	AddBaseUrlFlag(&rootFlags.baseUrl, cmds.PersistentFlags())
 	AddVerboseFlag(&rootFlags.verbose, cmds.PersistentFlags())
 
 	return cmds

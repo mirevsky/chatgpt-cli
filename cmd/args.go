@@ -7,6 +7,7 @@ import (
 
 const (
 	FlagApiKey               = "api-key"
+	FlagBaseUrl              = "base-url"
 	FlagConfigFile           = "config"
 	FlagInitialSystemMessage = "system-message"
 	FlagMaxTokens            = "max-tokens"
@@ -61,6 +62,10 @@ func AddVerboseFlag(b *bool, flags *pflag.FlagSet) {
 
 func AddApiKeyFlag(str *string, flags *pflag.FlagSet) {
 	flags.StringVarP(str, FlagApiKey, "k", "", "ChatGPT apiKey")
+}
+
+func AddBaseUrlFlag(str *string, flags *pflag.FlagSet) {
+	flags.StringVarP(str, FlagBaseUrl, "url", "", "ChatGPT BaseUrl")
 }
 
 func AddModelFlag(str *string, flags *pflag.FlagSet) {
