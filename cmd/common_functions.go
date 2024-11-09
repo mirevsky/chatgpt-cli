@@ -26,6 +26,9 @@ func setupOpenAIClient(apikey string, baseUrl string) (*openai.Client, error) {
 	if apikey == "" {
 		return nil, errors.Errorf("OpenAI API Key not set")
 	}
+	if baseUrl == "" {
+		return nil, errors.Errorf("Base Url not set")
+	}
 	config := openai.DefaultAzureConfig(apikey, baseUrl)
 	client := openai.NewClientWithConfig(config)
 	return client, nil
