@@ -2,12 +2,6 @@
 
 The ChatGPT CLI allows you to interact with ChatGPT directly from your command line, offering an efficient platform for real-time communication. This user guide will provide you with simple, straightforward instructions on how to install, set up, and effectively use the CLI.
 
-## Examples
-
-### Simple Interactive Chat
-
-![Translation Demo](docs/translation-demo.gif)
-
 ### Ask a Question, non-Interactively
 
 ```bash
@@ -45,11 +39,8 @@ done
 
 ### Image Generation and Vision Chat
 
-![Image Demo](docs/image-demo.gif)
 
 Which gives us the resulting image.
-
-![Result for requesting an image “white maltipoo dressed in a shark costume”](docs/maltipoo-01.png)
 
 ### Generate an Image, non-Interactively
 
@@ -59,8 +50,6 @@ echo "Monkey in a banana costume, on a high wire above a circus" | chatgpt-cli i
 
 In non-Interactive mode only the name of the output files are sent to stdout.
 In this case, monkey-01.png, shown here.
-
-![Result for requesting an image “Monkey in a banana costume, on a high wire above a circus”](docs/monkey-01.png)
 
 
 ```bash
@@ -76,7 +65,6 @@ The image depicts a whimsical circus scene with a monkey in a banana suit balanc
 
 ### Generate an Audio file from Text (Text to Speech)
 
-![Speech Demo](docs/speech-demo.gif)
 
 Which gives us the resulting audio file.
 
